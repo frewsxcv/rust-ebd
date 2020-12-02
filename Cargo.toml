@@ -1,0 +1,12 @@
+[package]
+name = "rust-ebd"
+version = "0.1.0"
+authors = ["Corey Farwell <coreyf@rwell.org>"]
+edition = "2018"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/frewsxcv/rust-ebd"
+description = "Rust library for reading the eBird Basic Dataset (EBD)"
+
+[dependencies]
+csv = "1"
+serde = { version = "1", features = ["derive"] }

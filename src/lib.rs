@@ -3,19 +3,23 @@
 //! # Examples
 //!
 //! ```rust
-//! # fn main() -> Result<(), Box<dyn std::error::Error>> {
-//! let mut ebd_reader = ebd::Reader::from_reader(io::stdin());
+//! use std::io;
 //!
-//! while ebd_reader.advance()? {
-//!     let record = ebd_reader.read_record()?;
+//! fn main() -> Result<(), Box<dyn std::error::Error>> {
+//!     let mut ebd_reader = ebd::Reader::from_reader(io::stdin());
 //!
-//!     println!(
-//!         "(lng: {}, lat: {})",
-//!         record.longitude,
-//!         record.latitude
-//!     );
+//!     while ebd_reader.advance()? {
+//!         let record = ebd_reader.read_record()?;
+//!
+//!         println!(
+//!             "(lng: {}, lat: {})",
+//!             record.longitude,
+//!             record.latitude
+//!         );
+//!     }
+//!
+//!     Ok(())
 //! }
-//! # }
 //! ```
 
 use std::{fmt, io, marker};

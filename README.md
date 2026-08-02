@@ -1,3 +1,5 @@
+**⚠️ This repository has moved to <https://tangled.org/rwell.org/rust-ebd> ⚠️**
+
 # rust-ebd
 
 Rust library for reading the [eBird Basic Dataset (EBD)][ebd].
